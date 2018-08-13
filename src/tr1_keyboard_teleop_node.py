@@ -45,7 +45,7 @@ def calibrate():
 			for idx, val in enumerate(joint_states.name):
 				joint_offsets["tr1"]["joint_offsets"][val] = (joint_states.position[idx] * -1)
 
-			joint_offsets["tr1"]["joint_offsets"]["JointRightShoulderTilt"] += 1.5707963
+			#joint_offsets["tr1"]["joint_offsets"]["JointRightShoulderTilt"] += 1.5707963
 		except yaml.YAMLError as exc:
 			print (exc)
 
